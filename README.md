@@ -10,6 +10,7 @@ Save Audio: Users can save the spoken text as an audio file in WAV format.
 Browser Compatibility: Works on modern browsers that support the Web Speech API and Web Audio API.
 
 Technology Stack:
+
 HTML: For structuring the web page.
 CSS: For styling the application.
 JavaScript: For the logic, including speech synthesis, handling UI actions, and saving audio.
