@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(45deg, #0F2027, #203A43, #2C5364);
+}
+
+/* Main container */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+/* App container */
+.app-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 12px;
+    padding: 20px 15px; /* Reduced padding for less height */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    width: 550px; /* Increased width */
+    min-height: 300px; /* Reduced height */
+    box-sizing: border-box;
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect for app container */
+.app-container:hover {
+    transform: scale(1.05);
+}
+
+/* Headings container */
+.headings-container {
+    padding: 0.5px;
+    margin-bottom: 1.5rem;
+}
+
+.headings-container h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.headings-container h3 {
+    font-size: 18px;
+    color: #f3f4f6;
+    margin-top: 4px;
+}
+
+/* Interaction container */
+.interaction-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center; /* Center items vertically */
+    align-items: center; 
+    padding:0.5px;
+}
+
+/* Textarea styling */
+.text-control {
+    padding: 0.8rem; /* Reduced padding for smaller size */
+    margin: 1rem 0; /* Reduced vertical spacing */
+    background-color: #3f464a;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 12px;
+    width: 80%; /* Decreased width */
+    resize: none;
+    font-size: 16px; /* Smaller font size */
+    line-height: 1.4; /* Adjusted line height */
+    box-sizing: border-box;
+    transition: background-color 0.3s ease;
+}
+
+.text-control:focus-visible {
+    outline: none;
+    background-color: #495057;
+}
+
+
+.text-control:focus-visible {
+    outline: none;
+    background-color: #495057;
+}
+
+/* Error message styling */
+.error-para {
+    color: red;
+    margin-bottom: 1rem;
+    font-size: 14px;
+}
+
+/* Button styling */
+.button {
+    padding: 1rem;
+    padding-top: 10px;
+    margin: 10px 0;
+    background-image: linear-gradient(90deg, rgb(0, 0, 0), #0c1618);
+    border: 0.5px solid transparent;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.25s ease;
+    width: 300px;
+    box-sizing: border-box;
+}
+
+.button:hover {
+    background-image: linear-gradient(90deg, #203A43, #0c1618);
+    padding: 1.1rem;
+    transform: scale(1.05);
+}
+
+.button:active {
+    transform: scale(1);
+    background-color: #1c2a32;
+}
+
+/* Language Select Dropdown */
+.language-select {
+    padding: 1rem;
+    font-size: 16px;
+    background-color: #0e232f;
+    color: #fff;
+    border: px solid #fff;
+    border-radius: 12px;
+    margin: 1.5rem auto;
+    width: 300px;
+    box-sizing: border-box;
+    text-align: center; /* Centers the text horizontally */
+    display: flex; /* Enables flexbox for centering */
+    justify-content: center; /* Centers text horizontally in the dropdown */
+    align-items: center; /* Centers text vertically in the dropdown */
+    transition: background-color 0.3s ease;
+}
+
+.language-select:focus-visible {
+    outline: none;
+    background-color: #495057;
+}
+
+/* Responsive design */
+@media (max-width: 480px) {
+    .app-container {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .text-control {
+        font-size: 14px;
+        padding: 0.8rem;
+    }
+
+    .button {
+        font-size: 14px;
+    }
+
+    .language-select {
+        font-size: 14px;
+    }
+
+    .headings-container h1 {
+        font-size: 24px;
+    }
+
+    .headings-container h3 {
+        font-size: 16px;
+    }
+}

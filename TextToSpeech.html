@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice Maker</title>
+    <link rel="stylesheet" href="./TextToSpeech.css">
+    <script src="./TextToSpeech.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="app-container">
+            <div class="headings-container">
+                <h1>Voice Maker</h1>
+                <h3>Transform Text into Speech by Entering in prompt</h3>
+            </div>
+            <div class="interaction-container">
+                <!-- Textarea for text input -->
+                <textarea id="textToConvert" 
+                          placeholder="Enter text to convert into speech..." 
+                          cols="35" rows="10" 
+                          class="text-control"></textarea>
+
+                <p class="error-para"></p>
+
+                <!-- Language Selection Dropdown -->
+                <select id="languageSelect" class="language-select">
+                    <option value="en-US">English (UK)</option>
+                    <option value="en-US">English (US)</option>
+                    <option value="es-ES">Spanish</option>
+                    <option value="fr-FR">French</option>
+                    <option value="de-DE">German</option>
+                    <option value="hi-IN">Hindi</option> 
+                    <option value="te-IN">Telugu</option>
+                </select>
+
+                <button class="button" id="convertBtn">📢🗣️💭</button>
+                <button class="button" id="saveBtn">💾 Save Audio</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
